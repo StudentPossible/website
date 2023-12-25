@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "space-mono";
-  src: url("fonts/SpaceMono-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "space-mono";
-  src: url("fonts/SpaceMono-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "space-mono";
-  src: url("fonts/SpaceMono-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "space-mono";
-  src: url("fonts/SpaceMono-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
 .i1 {
   grid-area: i1;
 }
@@ -52,59 +28,16 @@
 
 .c1 {
   grid-area: c1;
+  position: relative;
+}
+.c1 p {
+  position: absolute;
+  top: 0;
 }
 
 .c2 {
   grid-area: c2;
-}
-
-.scroll {
-  animation: scroll 10s linear infinite;
-}
-
-html {
-  background-image: url("/assets/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  margin: auto;
-  list-style-type: "> ";
-}
-
-a {
-  color: black;
-}
-
-a.lnk:hover,
-a.lnk.activated {
-  background-color: black;
-  color: white;
-}
-
-.img:hover {
-  background-color: none !important;
-}
-
-body {
-  margin: auto;
-  display: grid;
-  margin-top: 10px;
-}
-
-.box {
-  padding: 10px;
-  margin: 10px;
-}
-
-* {
-  font-family: space-mono;
+  background-image: url("/assets/images/accent-bg.png");
 }
 
 @media only screen and (min-width: 1700px) {
@@ -116,7 +49,6 @@ body {
 .c1,
 .c2 {
     outline: 3px black solid;
-    border-radius: 10px;
   }
   .f4:hover,
 .f5:hover,
@@ -139,7 +71,6 @@ body {
   .c1,
 .c2 {
     outline: 3px black solid;
-    border-radius: 10px;
   }
   .c1:hover,
 .c2:hover {
@@ -149,7 +80,7 @@ body {
   body {
     width: 1000px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 175px 200px 75px 40px 8rem 230px 110px 110px;
+    grid-template-rows: 175px 200px 75px 40px 8rem 80px 110px 110px;
     grid-template-areas: "i1 f2" "f1 i2" "f3 c2" "f3 c1" "f3 c1" ".. c1" "f5 c1" "f4 c1";
   }
 }
@@ -162,7 +93,9 @@ body {
 .c1,
 .c2 {
     outline: 3px black solid;
-    border-radius: 10px;
+  }
+  .c1 {
+    padding-top: 100%;
   }
   body {
     margin: 10px;
