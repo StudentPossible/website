@@ -1,24 +1,24 @@
 @font-face {
   font-family: "space-mono";
-  src: url("../fonts/SpaceMono-Regular.ttf") format("truetype");
+  src: url("../fonts/MonaspaceXenon-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "space-mono";
-  src: url("../fonts/SpaceMono-Italic.ttf") format("truetype");
+  src: url("../fonts/MonaspaceXenon-Italic.otf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "space-mono";
-  src: url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+  src: url("../fonts/MonaspaceXenon-Bold.otf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "space-mono";
-  src: url("../fonts/SpaceMono-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/MonaspaceXenon-BoldItalic.otf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
@@ -27,6 +27,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  line-height: 35px;
 }
 
 img {
