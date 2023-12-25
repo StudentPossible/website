@@ -37,7 +37,7 @@
 
 .c2 {
   grid-area: c2;
-  background-image: url("/assets/images/accent-bg.png");
+  background-image: url("../images/accent-bg.png");
 }
 
 @media only screen and (min-width: 1700px) {
